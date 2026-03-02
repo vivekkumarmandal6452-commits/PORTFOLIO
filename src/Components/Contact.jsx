@@ -2,26 +2,26 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
-
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_k9abcde",      // service ID
-      "template_dzwu7wh",     // template ID
-      e.target,
-      "VU1ysN_RvNw7mNlo0"    // public key
-    )
-    .then(
-      () => {
-        alert("Message sent successfully ✅");
-        e.target.reset();
-      },
-      (error) => {
-        console.log("EmailJS Error 👉", error);
-        alert("Message not sent ❌");
-      }
-    );
+    emailjs
+      .sendForm(
+        "service_k9abcde",
+        "template_dzwu7wh",
+        e.target,
+        "VU1ysN_RvNw7mNlo0"
+      )
+      .then(
+        () => {
+          alert("Message sent successfully.");
+          e.target.reset();
+        },
+        (error) => {
+          console.log("EmailJS Error:", error);
+          alert("Message not sent.");
+        }
+      );
   };
 
   return (
@@ -33,21 +33,17 @@ export default function Contact() {
         </p>
 
         <div className="contact-box">
-
-          {/* LEFT INFO */}
           <div className="contact-info">
-            <p><strong>Email:</strong> vivekkumarmandal778@gmail.com</p>
-            <p><strong>Phone:</strong> 9934363873</p>
+            <p>
+              <strong>Email:</strong> vivekkumarmandal778@gmail.com
+            </p>
+            <p>
+              <strong>Phone:</strong> 9934363873
+            </p>
           </div>
 
-          {/* FORM */}
           <form className="contact-form" onSubmit={sendEmail}>
-            <input
-              type="text"
-              name="from_name"
-              placeholder="Your Name"
-              required
-            />
+            <input type="text" name="from_name" placeholder="Your Name" required />
 
             <input
               type="email"
@@ -65,7 +61,6 @@ export default function Contact() {
 
             <button type="submit">Send Message</button>
           </form>
-
         </div>
       </div>
     </section>

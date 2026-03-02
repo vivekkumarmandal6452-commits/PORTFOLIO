@@ -1,22 +1,22 @@
-
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import Skills from "./Components/Skills";
+import Project from "./Components/Project";
+import Contact from "./Components/Contact";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <section id="home"><Hero /></section>
-      <section id="about"><About /></section>
-      <section id="skills"><Skills /></section>
-      <section id="contact"><Contact /></section>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Project />
+      <Contact />
     </>
   );
 }
 
 export default App;
-

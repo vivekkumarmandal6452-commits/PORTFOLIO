@@ -19,7 +19,7 @@ export default function Skills() {
           </div>
 
           <div className="skill-box">
-            <h3>UI/UX & Motion</h3>
+            <h3>UI/UX and Motion</h3>
             <ul>
               <li>UI/UX Principles</li>
               <li>Adobe After Effects</li>
@@ -38,12 +38,12 @@ export default function Skills() {
           </div>
 
           <div className="skill-box">
-            <h3>Tools & Software</h3>
+            <h3>Tools and Software</h3>
             <ul>
               <li>Blender</li>
               <li>Microsoft Office</li>
-              <li>ADCA (DCA – 1 Year)</li>
-              <li>Git & GitHub (Basic)</li>
+              <li>ADCA (DCA - 1 Year)</li>
+              <li>Git and GitHub (Basic)</li>
             </ul>
           </div>
 
@@ -57,7 +57,6 @@ export default function Skills() {
             </ul>
           </div>
         </div>
-
       </div>
     </section>
   );

@@ -4,13 +4,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-1: #081326;
+  --bg-2: #132c57;
+  --bg-3: #0f766e;
+  --surface: rgba(255, 255, 255, 0.14);
+  --surface-border: rgba(255, 255, 255, 0.22);
+  --text-primary: #ecf4ff;
+  --text-muted: #c8d8ee;
+  --accent: #63e6be;
+  --accent-2: #60a5fa;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #010406;
-  color: #1f2937;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 45%, var(--bg-3) 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
   line-height: 1.6;
 }
