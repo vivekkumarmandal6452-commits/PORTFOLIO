@@ -2,27 +2,28 @@ import React from "react";
 
 export default function About() {
   return (
-    <section id="about" className="about">
+    <section id="about" className="about reveal-up">
       <div className="about-container">
         <h2 className="section-title">About Me</h2>
 
         <p className="about-intro">
-          I'm <strong>Vivek Kumar</strong>, a dedicated and creative B.Tech
-          Computer Science Engineering student with a strong passion for
-          technology, design, and development.
+          I'm <strong>Vivek Kumar</strong>, a B.Tech CSE student focused on
+          building modern, user-friendly web applications with clean UI and
+          practical engineering.
         </p>
 
         <p>
-          I have a keen interest in <strong>UI/UX design</strong>,
-          <strong> frontend development</strong>, and
-          <strong> motion graphics</strong>. Currently, I am actively learning
-          full-stack development while working on real-world projects to
-          strengthen my practical and problem-solving skills.
+          I have completed full stack development training and actively work
+          with <strong>React.js</strong>, <strong>Node.js</strong>,
+          <strong> Express.js</strong>, and <strong>MongoDB</strong>. I enjoy
+          turning ideas into production-ready interfaces and APIs.
         </p>
 
         <p>
-          I enjoy combining creativity with logic to build user-friendly,
-          visually appealing web interfaces and engaging digital experiences.
+          I combine creativity with strong fundamentals in
+          <strong> DSA</strong>, <strong>DBMS</strong>, and
+          <strong> problem solving</strong> to deliver projects that are both
+          visually polished and technically reliable.
         </p>
 
         <div className="about-details">
@@ -30,16 +31,15 @@ export default function About() {
             <h3>Education</h3>
             <ul>
               <li>
-                <strong>B.Tech in CSE</strong> - Swami Vivekanand Group of
-                Institutes &amp; Technology, Banur <br />
-                <span>2nd Year | 2024 - Present</span>
+                <strong>B.Tech in CSE</strong> - SVIET, Chandigarh
+                <br />
+                <span>2024 - Present | GPA: 7.7/10</span>
               </li>
               <li>
-                <strong>Class 12th</strong> - S.G.M College, Ranchi (2024)
+                <strong>Full Stack Training</strong>
               </li>
               <li>
-                <strong>Class 10th</strong> - High School, Ghutiya Peshra
-                (2022)
+                <strong>DSA Course</strong>
               </li>
             </ul>
           </div>
@@ -47,10 +47,9 @@ export default function About() {
           <div>
             <h3>Career Objective</h3>
             <p>
-              To build a strong career in the IT industry, especially in
-              software development, web development, and the gaming industry,
-              where I can continuously learn, grow, and contribute with my
-              skills and creativity.
+              To contribute as a full stack developer in impactful products
+              while continuously improving my engineering depth, product
+              thinking, and collaboration skills.
             </p>
           </div>
         </div>

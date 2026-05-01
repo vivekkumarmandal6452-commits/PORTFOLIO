@@ -1,44 +1,48 @@
 import React from "react";
 
-const dummyProject = {
-  title: "Demo Project (Dummy)",
-  description:
-    "This is a sample card layout to show how your project section will look before publishing final projects.",
-  stack: "React, CSS, Responsive Layout",
-};
-
-const realProjects = [
+const projects = [
   {
-    title: "Personal Portfolio Website",
+    title: "Farm Fusion Marketplace",
     description:
-      "Designed and developed a modern personal portfolio with smooth navigation and responsive sections.",
-    stack: "React, Vite, CSS",
+      "Full-stack agriculture marketplace connecting farmers and buyers with clean navigation, service discovery, and responsive user flow.",
+    stack: "React.js, Node.js, Express.js, MongoDB",
+    link: "https://stellar-caramel-59398f.netlify.app",
   },
   {
-    title: "Contact Form Integration",
+    title: "Ecommerce Shopping Website",
     description:
-      "Implemented a live contact form with EmailJS to send user messages directly from the website.",
-    stack: "React, EmailJS",
+      "Responsive ecommerce experience with organized product sections, structured layouts, and smooth browsing interactions.",
+    stack: "HTML5, CSS3, JavaScript",
+    link: "https://astonishing-concha-e7e2b8.netlify.app",
+  },
+  {
+    title: "Neon Snake Game",
+    description:
+      "Arcade-style web game featuring smooth controls, live score tracking, and a neon visual system optimized for desktop and mobile.",
+    stack: "HTML5, CSS3, JavaScript",
+    link: "https://melodious-cactus-f9956e.netlify.app",
   },
 ];
 
 export default function Project() {
   return (
-    <section id="projects" className="projects">
+    <section id="projects" className="projects reveal-up">
       <div className="projects-container">
         <h2 className="section-title">Projects</h2>
+        <p className="projects-tagline">
+          Selected work focused on full stack development, UI quality, and practical product thinking.
+        </p>
         <div className="projects-grid">
-          <article className="project-card">
-            <h3>{dummyProject.title}</h3>
-            <p>{dummyProject.description}</p>
-            <span>{dummyProject.stack}</span>
-          </article>
-
-          {realProjects.map((project) => (
+          {projects.map((project) => (
             <article className="project-card" key={project.title}>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <span>{project.stack}</span>
+              <div className="project-actions">
+                <a className="btn primary project-link" href={project.link} target="_blank" rel="noreferrer">
+                  Live Demo
+                </a>
+              </div>
             </article>
           ))}
         </div>
